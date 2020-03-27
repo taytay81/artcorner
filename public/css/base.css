@@ -90,9 +90,9 @@
 }
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
-  .nav-list {
+  /*.nav-list {
     background-color: red;
-  }
+  }*/
   .header-right {
     visibility: hidden;
   }
@@ -100,9 +100,9 @@
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) and (max-width: 768px) {
-  .nav-list {
+  /* .nav-list {
     background-color: green;
-  }
+  }*/
   .header-right {
     visibility: hidden;
   }
@@ -110,9 +110,9 @@
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) and (max-width: 992px) {
-  .nav-list {
+  /*.nav-list {
     background-color: purple;
-  }
+  }*/
   .header-right {
     visibility: hidden;
   }
@@ -120,9 +120,9 @@
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
-  .nav-list {
+  /*.nav-list {
     background-color: yellow;
-  }
+  }*/
   .header-right {
     visibility: visible;
   }
