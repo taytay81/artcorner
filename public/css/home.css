@@ -82,6 +82,7 @@
 
 @media only screen and (max-width: 600px) {
   /*red*/
+
   .home-section-subline {
     display: flex;
     justify-content: center;
@@ -97,7 +98,7 @@
     justify-content: center;
     margin-right: 3%;
     margin-left: 3%;
-    margin-top: 4%;
+    margin-top: 10vh;
   }
   * {
     font: 2vw "Bellota", cursive;
@@ -125,7 +126,7 @@
     justify-content: center;
     margin-right: 3%;
     margin-left: 3%;
-    margin-top: 4%;
+    margin-top: 10vh;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 992px) {
@@ -138,7 +139,7 @@
     justify-content: center;
     margin-right: 3%;
     margin-left: 3%;
-    margin-top: 2%;
+    margin-top: 10vh;
   }
   * {
     font: 1.5vw "Bellota", cursive;
