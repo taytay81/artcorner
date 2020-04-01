@@ -1,14 +1,44 @@
+.about {
+  display: flex;
+  justify-content: center;
+}
+.about-container {
+  width: 80vw;
+  background-color: white;
+  margin-top: 3vh;
+  margin-bottom: 3vh;
+  padding-top: 1vh;
+}
+.presentationline {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 4vh;
+}
+.presentationtxt {
+  width: 25vw;
+  margin-right: 2vw;
+  margin-left: 2vw;
+}
+.presentationimg {
+  width: 15vw;
+  padding: 2vh;
+  border: solid 3px black;
+}
+.presentationimg img {
+  max-width: 100%;
+}
 .personal-picture {
   display: grid;
-
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-  grid-gap: 10px 10px;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-gap: 1vw 1vw;
+  height: 30vh;
 }
 
 .perso-img {
   width: 100%;
   height: 100%;
+  border: solid 3px black;
 }
 .insta-link {
   text-decoration: none;
