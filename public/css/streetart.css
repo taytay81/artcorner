@@ -5,7 +5,7 @@
 .streetArt-container {
   width: 80vw;
   background-color: white;
-  margin-top: 3vh;
+  margin-top: 13vh;
   margin-bottom: 3vh;
   padding-top: 1vh;
 }
@@ -41,7 +41,7 @@
 }
 
 .image-streetArt-container:hover {
-  max-width: 100%;
+  min-width: 100%;
   -o-transition: 0.4s;
   -ms-transition: 0.4s;
   -moz-transition: 0.4s;

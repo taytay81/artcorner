@@ -1,9 +1,10 @@
 .paintings-container {
   width: 80vw;
   background-color: white;
-  margin-top: 3vh;
+  margin-top: 13vh;
   margin-bottom: 3vh;
   padding-top: 1vh;
+  opacity: 100%;
 }
 .gridContainer {
   display: grid;
@@ -43,13 +44,24 @@
   display: flex;
   justify-content: center;
 }
-.image-painting-container:hover {
-  max-width: 100%;
-  -o-transition: 0.4s;
-  -ms-transition: 0.4s;
-  -moz-transition: 0.4s;
-  -webkit-transition: 0.4s;
-  transition: 0.4s;
+
+.image-painting-container:hover .paintings {
+  display: none;
+}
+.image-painting-container:hover .title-painting {
+  display: none;
+}
+.image-painting-container:hover .image-border {
+  width: 40vw;
+  position: fixed;
+  top: 10vh;
+  left: 11vw;
+
+  background-color: hsla(0, 0%, 100%, 0.9);
+  z-index: 1;
+}
+.image-painting-container:hover .image-painting {
+  width: 100%;
 }
 
 @media only screen and (max-width: 600px) {
@@ -58,8 +70,18 @@
   }
   * {
     font: 2vw "Bellota", cursive;
-    }
-  
+  }
+  .image-painting-container:hover .image-border {
+    width: 75vw;
+  }
+  .image-painting-container:hover .paintings-container {
+    background-color: pink;
+    z-index: 0;
+  }
+  .image-painting-container:active .paintings-container {
+    background-color: pink;
+    z-index: 0;
+  }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
@@ -70,6 +92,9 @@
   /*green*/
   * {
     font: 1.5vw "Bellota", cursive;
+  }
+  .image-painting-container:hover .image-border {
+    width: 80vw;
   }
 }
 
@@ -83,11 +108,21 @@
   * {
     font: 1.3vw "Bellota", cursive;
   }
+  .image-painting-container:hover .image-border {
+    width: 75vw;
+  }
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
   .gridContainer {
     grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+  .image-painting-container:hover .image-border {
+    width: 40vw;
+    left: 25vw;
+  }
+  .image-painting-container:hover .paintings-container {
+    background-color: pink;
   }
 }

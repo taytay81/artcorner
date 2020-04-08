@@ -2,7 +2,7 @@
   width: 80vw;
   height: 80vh;
   background-color: white;
-  margin-top: 3vh;
+  margin-top: 13vh;
   margin-bottom: 2vh;
   padding-top: 1vh;
 }
@@ -34,8 +34,6 @@
   align-items: center;
 }
 
-
-
 /*media queries */
 
 @media only screen and (max-width: 600px) {
@@ -44,8 +42,7 @@
   }
   * {
     font: 2vw "Bellota", cursive;
-    }
-  
+  }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
@@ -77,4 +74,3 @@
     grid-template-columns: 1fr 1fr 1fr 1fr;
   }
 }
-
