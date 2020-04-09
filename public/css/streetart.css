@@ -118,7 +118,8 @@
     left: 20vw;
   }
   .twoRowsleft:hover .image-border {
-    width: 50vw;
+    width: 60
+    vw;
     left: 20vw;
   }
 }
