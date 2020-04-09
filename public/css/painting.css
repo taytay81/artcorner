@@ -1,3 +1,6 @@
+.fadin {
+  opacity: 100%;
+}
 .paintings-container {
   width: 80vw;
   background-color: white;
@@ -45,8 +48,12 @@
   justify-content: center;
 }
 
-.image-painting-container:hover .paintings {
-  display: none;
+.image-painting-container:hover {
+  top: 10vh;
+  background-color: hsla(0, 0%, 100%, 0.9);
+  position: fixed;
+  width: 80vw;
+  height: 100vh;
 }
 .image-painting-container:hover .title-painting {
   display: none;
@@ -56,11 +63,11 @@
   position: fixed;
   top: 10vh;
   left: 11vw;
-
-  background-color: hsla(0, 0%, 100%, 0.9);
+  background-color: hsla(0, 0%, 100%, 0.5);
   z-index: 1;
 }
 .image-painting-container:hover .image-painting {
+  background-color: hsla(0, 0%, 100%, 0.5);
   width: 100%;
 }
 
@@ -74,16 +81,7 @@
   .image-painting-container:hover .image-border {
     width: 75vw;
   }
-  .image-painting-container:hover .paintings-container {
-    background-color: pink;
-    z-index: 0;
-  }
-  .image-painting-container:active .paintings-container {
-    background-color: pink;
-    z-index: 0;
-  }
 }
-
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 600px) and (max-width: 768px) {
   .gridContainer {
@@ -97,7 +95,6 @@
     width: 80vw;
   }
 }
-
 /* Large devices (laptops/desktops, 992px and up) */
 
 @media only screen and (min-width: 768px) and (max-width: 992px) {
@@ -112,17 +109,13 @@
     width: 75vw;
   }
 }
-
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
   .gridContainer {
     grid-template-columns: 1fr 1fr 1fr 1fr;
   }
   .image-painting-container:hover .image-border {
-    width: 40vw;
-    left: 25vw;
-  }
-  .image-painting-container:hover .paintings-container {
-    background-color: pink;
+    width: 35vw;
+    left: 30vw;
   }
 }

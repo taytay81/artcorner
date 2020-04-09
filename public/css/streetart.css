@@ -39,15 +39,31 @@
   max-height: 50%;
   border: 2px solid black;
 }
-
 .image-streetArt-container:hover {
-  min-width: 100%;
-  -o-transition: 0.4s;
-  -ms-transition: 0.4s;
-  -moz-transition: 0.4s;
-  -webkit-transition: 0.4s;
-  transition: 0.4s;
+  top: 10vh;
+  background-color: hsla(0, 0%, 100%, 0.9);
+  position: fixed;
+  width: 80vw;
+  height: 100vh;
+  max-width: 100%;
 }
+.image-streetArt-container:hover .title-streetArt {
+  display: none;
+}
+.image-streetArt-container:hover .image-border {
+  width: 40vw;
+  position: fixed;
+  top: 10vh;
+  left: 11vw;
+  z-index: 1;
+}
+.image-streetArt-container:hover .image-streetArt {
+  width: 100%;
+}
+.twoRowsleft:hover {
+  max-width: 100%;
+}
+
 .twoRowsright {
   grid-column: 2/-1;
   max-width: 70%;
@@ -68,6 +84,9 @@
   * {
     font: 2vw "Bellota", cursive;
   }
+  .image-streetArt-container:hover .image-border {
+    width: 75vw;
+  }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
@@ -78,6 +97,9 @@
   /*green*/
   * {
     font: 1.5vw "Bellota", cursive;
+  }
+  .image-streetArt-container:hover .image-border {
+    width: 75vw;
   }
 }
 
@@ -91,11 +113,27 @@
   * {
     font: 1.3vw "Bellota", cursive;
   }
+  .image-streetArt-container:hover .image-border {
+    width: 60vw;
+    left: 20vw;
+  }
+  .twoRowsleft:hover .image-border {
+    width: 50vw;
+    left: 20vw;
+  }
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
   .gridContainerSA {
     grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+  .image-streetArt-container:hover .image-border {
+    width: 30vw;
+    left: 30vw;
+  }
+  .twoRowsleft:hover .image-border {
+    width: 50vw;
+    left: 20vw;
   }
 }

@@ -34,6 +34,28 @@
   align-items: center;
 }
 
+.sculpture-image:hover {
+  top: 10vh;
+  background-color: hsla(0, 0%, 100%, 0.9);
+  position: fixed;
+  width: 80vw;
+  height: 100vh;
+  max-width: 100%;
+}
+.sculpture-image:hover .title-sculpture {
+  display: none;
+}
+.sculpture-image:hover .sculpture-border {
+  width: 40vw;
+  position: fixed;
+  top: 10vh;
+  left: 11vw;
+  z-index: 1;
+}
+.sculpture-image:hover .image-sculpture {
+  width: 100%;
+}
+
 /*media queries */
 
 @media only screen and (max-width: 600px) {
@@ -42,6 +64,9 @@
   }
   * {
     font: 2vw "Bellota", cursive;
+  }
+  .sculpture-image:hover .sculpture-border {
+    width: 75vw;
   }
 }
 
@@ -53,6 +78,9 @@
   /*green*/
   * {
     font: 1.5vw "Bellota", cursive;
+  }
+  .sculpture-image:hover .sculpture-border {
+    width: 75vw;
   }
 }
 
@@ -66,11 +94,19 @@
   * {
     font: 1.3vw "Bellota", cursive;
   }
+  .sculpture-image:hover .sculpture-border {
+    width: 60vw;
+    left: 20vw;
+  }
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
   .gridContainer {
     grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+  .sculpture-image:hover .sculpture-border {
+    width: 30vw;
+    left: 30vw;
   }
 }
