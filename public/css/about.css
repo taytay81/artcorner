@@ -45,3 +45,46 @@
 .list-insta {
   list-style: none;
 }
+/*media queries */
+
+@media only screen and (max-width: 600px) {
+  .personal-picture {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  * {
+    font: 2vw "Bellota", cursive;
+  }
+  
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 600px) and (max-width: 768px) {
+  .personal-picture {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  }
+  /*green*/
+  * {
+    font: 1.5vw "Bellota", cursive;
+  }
+ 
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+  /*purple*/
+  .personal-picture {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  }
+  * {
+    font: 1.3vw "Bellota", cursive;
+  }
+ 
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .personal-picture {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  }
+}
