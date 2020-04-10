@@ -118,12 +118,10 @@
 /*dropdown menu styling */
 
 .dropdown {
-  /*position: relative;
-  display: inline-block;*/
   left: 0;
   top: 0;
   text-align: right;
-  /* font-size: 5vw !important;*/
+
   display: flex;
   align-items: center;
   justify-content: center;
@@ -134,7 +132,7 @@
   display: none;
   position: absolute;
   background-color: white;
-  width: 100vw;
+  width: 30vw;
   height: 100vh;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
@@ -156,7 +154,7 @@
 }
 
 .dropdown:hover .dropdown-content a {
-  width: 50%;
+  width: 100%;
   height: 25%;
   font-size: 5vw;
   display: flex;
@@ -165,9 +163,7 @@
 .dropbtn:hover .dropbtn {
   display: none;
 }
-.dropdown:hover .dropbtncross {
-  display: none;
-}
+
 .dropbtn {
   background-color: #eeeeee;
   border: none;
@@ -244,9 +240,6 @@
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
-  /*.nav-list {
-    background-color: red;
-  }*/
   .header-right {
     visibility: hidden;
   }

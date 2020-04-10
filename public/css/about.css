@@ -54,7 +54,15 @@
   * {
     font: 2vw "Bellota", cursive;
   }
-  
+  .presentationtxt {
+    width: 40vw;
+  }
+  .presentationimg {
+    width: 40vw;
+  }
+  .about-container {
+    height: 100%;
+  }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
@@ -66,7 +74,12 @@
   * {
     font: 1.5vw "Bellota", cursive;
   }
- 
+  .presentationtxt {
+    width: 30vw;
+  }
+  .presentationimg {
+    width: 30vw;
+  }
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
@@ -79,7 +92,6 @@
   * {
     font: 1.3vw "Bellota", cursive;
   }
- 
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
